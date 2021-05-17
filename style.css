@@ -14,7 +14,6 @@
     padding: 20px;
     border: 1px solid #e3e3e3;
     border-radius: 10px;
-
 }
 
 form{
@@ -26,6 +25,7 @@ form{
 
 .form-headline{
     font-size: 1.3rem;
+    transform: translateY(10px);
 }
 
 .assignment-operator{
@@ -69,6 +69,10 @@ input[type = 'submit']{
 .formula{
     font-size: .8rem;
     margin-top: 20px;
+    
+}
+.formula span{
+    font-weight: 500;
 }
 
 
