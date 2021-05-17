@@ -16,7 +16,8 @@
     border-radius: 10px;
 }
 
-form{
+
+.form-input{
     margin-top: 10%;
     height:auto;
     display: flex;
