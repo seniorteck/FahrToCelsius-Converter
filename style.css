@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrapper{
+    margin: 20% auto;
+    width: 85%;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+
+}
+
+form{
+    margin-top: 10%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-headline{
+    font-size: 1.3rem;
+}
+
+.assignment-operator{
+    margin: 0 7px ;
+    font-weight: 500;
+    transform: translateY(10px);
+}
+
+input[type = 'text']{
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d8d5d5;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dropdown{
+    width: 100%;
+    border: 1px solid #d8d5d5;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: transparent;
+    outline: none;
+    /* height: 30px; */
+    padding: 7px 5px;
+    font-size: .7rem;
+}
+
+input[type = 'submit']{
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 700;
+    background-color: #F9AB00;
+    color: #fff;
+    border: none;
+}
+
+.formula{
+    font-size: .8rem;
+    margin-top: 20px;
+}
+
+
