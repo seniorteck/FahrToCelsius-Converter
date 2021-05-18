@@ -52,7 +52,6 @@ input[type = 'text']{
     border-bottom-right-radius: 2px;
     background-color: transparent;
     outline: none;
-    /* height: 30px; */
     padding: 7px 5px;
     font-size: .7rem;
 }
@@ -65,6 +64,11 @@ input[type = 'submit']{
     background-color: #F9AB00;
     color: #fff;
     border: none;
+    outline: none;  
+}
+
+input[type = 'submit']:hover{
+    background-color: #e69e04;   
 }
 
 .formula{
