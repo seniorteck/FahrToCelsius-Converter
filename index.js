@@ -7,18 +7,33 @@ const convertFahrToCelsius = (input)=>{
     let fahrSub = input - 32;
     let fahrMul = fahrSub * 5/9
     return fahrMul; 
-    
 };
 
 let result = 
-convertFahrToCelsius(0);
+convertFahrToCelsius('string');
 
-console.log(result);
+console.log(typeof result, `${result}`);
 
 form.addEventListener('submit', (evt)=>{
     // stops the form from refreshing/reloading on click of submit button//
     evt.preventDefault();
-    console.log('coming out strong');
-    // let result = form.value;
-    // console.log(`the type input is ${result}`);
+
+    let result = convertFahrToCelsius(form.userInput.value);
+
+    if (form.userInput.value.innerText == "0"){
+        console.log('yeah i found a string')
+    }
+    else{
+        console.log('nothing found');
+    }
+    // print the userInput to the console.log//
+    console.log(typeof result, `${result}`);
+
+    // ouput the result to the outPut field
+    form.outPut.value = result;
+    
 });
+
+// const unitChecker = ()=>{
+    
+// };
