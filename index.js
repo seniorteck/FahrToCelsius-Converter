@@ -3,25 +3,17 @@ const form = document.querySelector('form');
 
 // an event listener that listen for user input in the text field //
 
-const convertFahrToCelsius = (input)=>{
-    if (typeof input == 'string'){
-        console.log('it a string type')
-    }else if(typeof input == 0){
-        console.log('it a number')
-    }
-    else{
-        'still testing'
-    }
+function convertFahrToCelsius(fahr){    
 
-    let fahrSub = input - 32;
-    let fahrMul = fahrSub * 5/9
-    return fahrMul; 
+    if (typeof fahr === Number){
+        let fahrSub = fahr - 32;
+        let fahrMul = fahrSub * 5/9;
+
+        return fahrMul; 
+    }
+    
 };
 
-let result = 
-convertFahrToCelsius(typeof 'vision');
-
-console.log(result);
 
 form.addEventListener('submit', (evt)=>{
     // stops the form from refreshing/reloading on click of submit button//
